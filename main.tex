@@ -1,0 +1,67 @@
+% Source: http://tex.stackexchange.com/a/150903/23931
+\documentclass{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola} % or any other font package you like
+
+\input{Univs/UCSB.tex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  \textcolor{blue}{\youremail}}
+
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Chang Whan Jung}
+\newcommand{\youremail}{changhwanjung95@gmail.com}
+\newcommand{\yourweb}{https://www.abcd.com/}
+
+\newcommand{\statement}[1]{\par\medskip
+  \underline{\textcolor{blue}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+  colorlinks,
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large of \yourname\ (PhD applicant for Fall - 2023)
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+
+\paragraph{Introduction}
+
+\input{Intro.tex}
+
+\paragraph{Education}
+\input{Education.tex}
+
+\paragraph{Research Experiences}
+\input{Experiences.tex}
+
+\paragraph{Research Interests}
+\input{Interests.tex}
+
+\paragraph{Conclusion}
+\input{Conclusion.tex}
+%\paragraph{Future Plans}
+%\input{FuturePlans.tex}
+
+
+%\paragraph{}
+
+\end{document}
